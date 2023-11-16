@@ -1,0 +1,493 @@
+<div class="formbold-main-wrapper">
+  <div class="formbold-form-wrapper">
+        <img height="30" src="https://blogs.paylink.sa/wp-content/uploads/2023/09/cropped-ar-Logo-Mid-1.png">
+<h1><br>Proposal Builder</h1>
+    <form action="/generate_pdf" method="POST">
+      <div class="formbold-mb-3">
+        <label class="formbold-form-label"> Company Name </label>
+        <input
+          type="text"
+          name="age"
+          id="age"
+          placeholder="شركة المتحدة للطاقة"
+          class="formbold-form-input"
+        />
+      </div>
+      <div class="formbold-mb-3"><label class="formbold-form-label">Setup-Fees</label>
+        <select class="formbold-form-input" name="setup" id="setup">
+          <option value="Waived">Waived</option>
+          <option value="250">250 SAR</option>
+          <option value="500">500 SAR</option>
+          <option value="1000">1,000 SAR</option>
+          <option value="1500">1,500 SAR</option>
+          <option value="2000">2,000 SAR</option>
+        </select>
+      </div>
+         <div class="formbold-mb-3"><label class="formbold-form-label">Subscription</label>
+        <select class="formbold-form-input" name="sub" id="sub">
+          <option value="Waived">Waived</option>
+          <option value="49">49 SAR</option>
+          <option value="99">99 SAR</option>
+          <option value="149">149 SAR</option>
+          <option value="199">199 SAR</option>
+        </select>
+      </div>
+
+
+      <div class="formbold-input-wrapp formbold-mb-3">
+
+        <label class="formbold-form-label"> Mada </label>
+        <div>
+          <input
+            type="number"
+            id="madap"
+            name="madap"
+            placeholder="MADA (%)"
+            class="formbold-form-input"
+            value="1.00"
+            min="0.70"
+            max="1.00"
+            step="0.05"
+          />
+          <span class="tiny">%</span>
+          <input
+            type="number"
+            name="madaf"
+            id="madaf"
+            placeholder="MADA (SAR)"
+            class="formbold-form-input"
+            value="0.00"
+            min="0.00"
+            max="1.00"
+            step="0.05"
+          />
+          <span class="tiny">SAR</span>
+        </div>
+        <label class="formbold-form-label"> Visa </label>
+        <div>
+        <input
+            type="number"
+            name="visap"
+            id="visap"
+            placeholder="VISA (%)"
+            class="formbold-form-input"
+            value="2.25"
+            min="0.50"
+            max="3.00"
+            step="0.05"
+          />
+            <span class="tiny">%</span>
+
+           <input
+            type="number"
+            name="visaf"
+            id="visaf"
+            placeholder="VISA (SAR)"
+            class="formbold-form-input"
+            value="1.00"
+            min="0.00"
+            max="1"
+            step="0.05"
+          /><span class="tiny">SAR</span>
+        </div>
+
+
+        <label class="formbold-form-label"> MasterCard </label>
+        <div>
+        <input
+            type="number"
+            name="mcp"
+            id="mcp"
+            placeholder="MC (%)"
+            class="formbold-form-input"
+            value="2.25"
+            min="1.90"
+            max="3.00"
+            step="0.05"
+          />
+            <span class="tiny">%</span>
+
+           <input
+            type="number"
+            name="mcf"
+            id="mcf"
+            placeholder="MC (SAR)"
+            class="formbold-form-input"
+            value="1.00"
+            min="0.50"
+            max="1"
+            step="0.05"
+          /><span class="tiny">SAR</span>
+        </div>
+
+        <label class="formbold-form-label"> +ApplePay </label>
+        <div>
+        <input
+            type="number"
+            name="app"
+            id="app"
+            placeholder="Apple +(%)"
+            class="formbold-form-input"
+            value="0.00"
+            min="0.00"
+            max="3.00"
+            step="0.05"
+          />
+            <span class="tiny">%</span>
+           <input
+            type="number"
+            name="apf"
+            id="apf"
+            placeholder="Apple +(SAR)"
+            class="formbold-form-input"
+            value="0.00"
+            min="0.00"
+            max="1"
+            step="0.05"
+          /><span class="tiny">SAR</span>
+        </div>
+
+
+        <label class="formbold-form-label"> American Express </label>
+        <div>
+        <input
+            type="number"
+            name="aep"
+            id="aep"
+            placeholder="AE (%)"
+            class="formbold-form-input"
+            value="2.9"
+            min="2.5"
+            max="3.90"
+            step="0.05"
+          />
+          <span class="tiny">%</span>
+          <input
+            type="number"
+            name="aef"
+            id="aef"
+            placeholder="AE (SAR)"
+            class="formbold-form-input"
+            value="1"
+            min="0.00"
+            max="1"
+            step="0.05"
+          /><span class="tiny">SAR</span>
+        </div>
+        <label class="formbold-form-label"> urpay </label>
+        <div>
+        <input
+            type="number"
+            name="urp"
+            id="urp"
+            placeholder="URPAY (%)"
+            class="formbold-form-input"
+            value="1.5"
+            min="1.3"
+            max="1.5"
+            step="0.05"
+          />
+          <span class="tiny">%</span>
+          <input
+            type="number"
+            name="urf"
+            id="urf"
+            placeholder="URPAY (SAR)"
+            class="formbold-form-input"
+            value="0.00"
+            min="0.00"
+            max="1"
+            step="0.05"
+          /><span class="tiny">SAR</span>
+        </div>
+
+      <label class="formbold-form-label"> STCPay </label>
+        <div>
+        <input
+            type="number"
+            name="stcp"
+            id="stcp"
+            placeholder="STCPAY (%)"
+            class="formbold-form-input"
+            value="1.9"
+            min="1.5"
+            max="2"
+            step="0.05"
+          />
+          <span class="tiny">%</span>
+          <input
+            type="number"
+            name="stcf"
+            id="stcf"
+            placeholder="STCPAY (SAR)"
+            class="formbold-form-input"
+            value="0.00"
+            min="0.00"
+            max="1"
+            step="0.05"
+          /><span class="tiny">SAR</span>
+        </div>
+
+      <label class="formbold-form-label"> Tabby </label>
+        <div>
+        <input
+            type="number"
+            name="tabbyp"
+            id="tabbyp"
+            placeholder="TABBY (%)"
+            class="formbold-form-input"
+            value="8.00"
+            min="5.5"
+            max="8.5"
+            step="0.05"
+          />
+          <span class="tiny">%</span>
+          <input
+            type="number"
+            name="tabbyf"
+            id="tabbyf"
+            placeholder="TABBY (SAR)"
+            class="formbold-form-input"
+            value="1"
+            min="0.00"
+            max="1"
+            step="0.5"
+          /><span class="tiny">SAR</span>
+        </div>
+
+      <label class="formbold-form-label"> Tamara </label>
+        <div>
+        <input
+            type="number"
+            name="tamarap"
+            id="tamarap"
+            placeholder="Tamara (%)"
+            class="formbold-form-input"
+            value="5.99"
+            min="5.5"
+            max="6.00"
+            step="0.01"
+          />
+          <span class="tiny">%</span>
+          <input
+            type="number"
+            name="tamaraf"
+            id="tamaraf"
+            placeholder="TAMARA (SAR)"
+            class="formbold-form-input"
+            value="0.00"
+            min="0.00"
+            max="1"
+            step="0.1"
+          /><span class="tiny">SAR</span>
+        </div>
+
+              <label class="formbold-form-label"> Saddad </label>
+        <div>
+        <input
+            type="number"
+            name="sadp"
+            id="sadp"
+            placeholder="SADDAD (%)"
+            class="formbold-form-input"
+            value="0.00"
+            min="0.00"
+            max="2.00"
+            step="0.05"
+          />
+          <span class="tiny">%</span>
+          <input
+            type="number"
+            name="sadf"
+            id="sadf"
+            placeholder="SADDAD (SAR)"
+            class="formbold-form-input"
+            value="10"
+            min="8.00"
+            max="15"
+            step="0.5"
+          /><span class="tiny">SAR</span>
+        </div>
+
+      </div>
+
+
+      <button class="formbold-btn">Submit</button>
+    </form>
+  </div>
+</div>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  body {
+    font-family: 'Inter', sans-serif;
+  }
+  .formbold-mb-3 {
+    margin-bottom: 15px;
+  }
+  .formbold-relative {
+    position: relative;
+  }
+  .formbold-opacity-0 {
+    opacity: 0;
+  }
+  .formbold-stroke-current {
+    stroke: #ffffff;
+    z-index: 999;
+  }
+  #supportCheckbox:checked ~ div span {
+    opacity: 1;
+  }
+  #supportCheckbox:checked ~ div {
+    background: #6a64f1;
+    border-color: #6a64f1;
+  }
+  .formbold-main-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 48px;
+  }
+  .formbold-form-wrapper {
+    margin: 0 auto;
+    max-width: 570px;
+    width: 100%;
+    background: white;
+    padding: 40px;
+  }
+  .formbold-img {
+    display: block;
+    margin: 0 auto 45px;
+  }
+  .formbold-input-wrapp > div {
+    display: flex;
+    gap: 5px;
+  }
+  .formbold-input-flex {
+    display: flex;
+    gap: 20px;
+    margin-bottom: 15px;
+  }
+  .formbold-input-flex > div {
+    width: 50%;
+  }
+  .formbold-form-input {
+    width: 100%;
+    padding: 13px 22px;
+    border-radius: 5px;
+    border: 1px solid #dde3ec;
+    background: #ffffff;
+    font-weight: 1500;
+    font-size: 20px;
+    color: rgba(83, 99, 135, 1);
+    outline: none;
+    resize: none;
+  }
+  .formbold-form-input::placeholder,
+  select.formbold-form-input,
+  .formbold-form-input[type='date']::-webkit-datetime-edit-text,
+  .formbold-form-input[type='date']::-webkit-datetime-edit-month-field,
+  .formbold-form-input[type='date']::-webkit-datetime-edit-day-field,
+  .formbold-form-input[type='date']::-webkit-datetime-edit-year-field {
+    color: rgba(83, 99, 135, 0.5);
+  }
+  .formbold-form-input:focus {
+    border-color: #6a64f1;
+    box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.05);
+  }
+  .formbold-form-label {
+    color: #536387;
+    font-size: 14px;
+    line-height: 24px;
+    display: block;
+    margin-bottom: 5px;
+    margin-top: 25px;
+  }
+  .formbold-checkbox-label {
+    display: flex;
+    cursor: pointer;
+    user-select: none;
+    font-size: 16px;
+    line-height: 24px;
+    color: #536387;
+  }
+  .formbold-checkbox-label a {
+    margin-left: 5px;
+    color: #6a64f1;
+  }
+  .formbold-input-checkbox {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border-width: 0;
+  }
+  .formbold-checkbox-inner {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 20px;
+    height: 20px;
+    margin-right: 16px;
+    margin-top: 2px;
+    border: 0.7px solid #dde3ec;
+    border-radius: 3px;
+  }
+  .formbold-form-file {
+    padding: 12px;
+    font-size: 14px;
+    line-height: 24px;
+    color: rgba(83, 99, 135, 0.5);
+  }
+  .formbold-form-file::-webkit-file-upload-button {
+    display: none;
+  }
+  .formbold-form-file:before {
+    content: 'Upload';
+    display: inline-block;
+    background: #EEEEEE;
+    border: 0.5px solid #E7E7E7;
+    border-radius: 3px;
+    padding: 3px 12px;
+    outline: none;
+    white-space: nowrap;
+    -webkit-user-select: none;
+    cursor: pointer;
+    color: #637381;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 16px;
+    margin-right: 10px;
+  }
+  .formbold-btn {
+    font-size: 16px;
+    border-radius: 5px;
+    padding: 14px 25px;
+    border: none;
+    font-weight: 2000;
+    background-color: #3434cc;
+    color: white;
+    cursor: pointer;
+    margin-top: 25px;
+  }
+  .formbold-btn:hover {
+    box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.2);
+  }
+  .formbold-w-45 {
+    width: 45%;
+  }
+
+  .tiny{
+  color: grey;
+  font-size: 10px;
+  margin-right: 10px;
+  }
+</style>
